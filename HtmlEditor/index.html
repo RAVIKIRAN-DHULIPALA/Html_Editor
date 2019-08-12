@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="./html5.ico" sizes="any" >
+    <meta charset="UTF-8" />
+    <title>Html Editor</title>
+    <script>
+      function exec() {
+        var content = document.getElementById("editor").value;
+        document.getElementById("code").srcdoc = content;
+      }
+    </script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <center>
+      <h1>HTML Editor</h1>
+    </center>
+    <div class="main">
+      <textarea id="editor" onkeyup="exec()" onfocus="this.innerHTML=''">
+<!--write your code here--></textarea
+      >
+      <iframe id="code"></iframe>
+    </div>
+    <p align="center">
+      This is a Html Editor. No need to run the file. <br />The white screen
+      beside the code editor will display the output of the html code written
+    </p>
+  </body>
+</html>
